@@ -8,7 +8,7 @@ gAcademy es un proyecto en el marco de la asignatura Infraestructuras Virtuales 
 La idea principal es cambiar (y facilitar) la gestión de una academia donde hasta dar de alta un alumno puede ser una tarea tediosa. Los microservicios que incluirá este proyecto serán, entre otros, la creación de nuevos alumnos y profesores, asignación de grupos tanto a alumnos como a profesores y la gestión de horarios de aulas y grupos.
 
 
-## Servicios
+## Servicios del proyecto
 
 | Lenguaje | Base de datos | Infraestructura | IC |  
 |-------|--------|---------|---------|
