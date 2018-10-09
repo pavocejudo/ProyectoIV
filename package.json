@@ -1,0 +1,35 @@
+{
+  "name": "gacademy",
+  "version": "1.0.0",
+  "description": "Gestione a sus alumnos y profesores desde cualquier parte",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavocejudo/ProyectoIV.git"
+  },
+  "keywords": [
+    "academy",
+    "iv",
+    "ugr",
+    "gacademy",
+    "service",
+    "microservice",
+    "nodejs",
+    "expressjs"
+  ],
+  "author": "Sergio Rodríguez Marín",
+  "license": "SEE LICENSE IN https://github.com/pavocejudo/ProyectoIV/blob/master/LICENSE",
+  "bugs": {
+    "url": "https://github.com/pavocejudo/ProyectoIV/issues"
+  },
+  "homepage": "https://pavocejudo.github.io/ProyectoIV/",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
