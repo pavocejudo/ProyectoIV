@@ -2,7 +2,7 @@
   "name": "gacademy",
   "version": "1.0.0",
   "description": "Gestione a sus alumnos y profesores desde cualquier parte",
-  "main": "app.js",
+  "main": "src/app.js",
   "directories": {
     "doc": "docs"
   },
@@ -30,6 +30,8 @@
   },
   "homepage": "https://pavocejudo.github.io/ProyectoIV/",
   "dependencies": {
-    "express": "^4.16.3"
+    "expect.js": "^0.3.1",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0"
   }
 }
