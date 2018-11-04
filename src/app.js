@@ -4,7 +4,9 @@ const teacher     = require('./teacher.js');
 
 const app = express();
 
-
+app.get('/', (req, res) => {
+   res.send('{"status":"OK"}');
+})
 
 app.get('/student/all', (req,res) => {
     res.send('{ok}');
