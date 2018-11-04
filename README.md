@@ -16,9 +16,21 @@ En el desarrollo de gAcademy emplearé Nodejs como lenguaje principal para el se
 Despliegue en [https://gacademy.herokuapp.com/](https://gacademy.herokuapp.com/)
 
 El despliegue de la aplicación se ha realizado en Heroku. El uso de Heroku es debido a que se puede comenzar con una cuenta gratuita y en caso de querer ampliar las prestaciones 
-del servidor se puede contratar según las necesidades de la aplicación(dynos). Además Heroku proporciona un toolbet muy bien adaptado para trabajar con aplicaciones NodeJs
+del servidor se puede contratar según las necesidades de la aplicación(dynos). Además Heroku proporciona un toolbet muy bien adaptado para trabajar con aplicaciones NodeJs.
 
-Para configurar Heroku he realizado las configuraciones descritas [aquí](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)
+Para configurar Heroku he realizado las configuraciones descritas [aquí](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up).
+
+Los pasos seguidos sigue el siguiente orden:
+1. Crear fichero Procfile con la ruta que va a utilizar Heroku para ejecutar la aplicación.
+2. De igual manera, se lo especifico en el fichero package.json en la sección script.
+3. Creamos la aplicación en Heroku utilizando su Toolbet:
+
+	3.1 Generamos la aplicación: ```heroku apps:create --region eu gacademy```
+
+	3.2 Probamos que todo funciona: ```heroku local web```
+
+	3.3 Si todo funciona correctamente, podemos subirlo a Git ```git push heroku master```
+4. Podemos acceder a [https://gacademy.herokuapp.com/](https://gacademy.herokuapp.com/) para comprobar que todo funcione correcto.
 
 ## Project Documentation
 [Online Docs](https://pavocejudo.github.io/ProyectoIV/)
