@@ -12,12 +12,13 @@ La idea principal es cambiar (y facilitar) la gestión de una academia donde has
 En el desarrollo de gAcademy emplearé Nodejs como lenguaje principal para el servidor ya que permite llamadas asíncronas y parte de la idea de hacer aplicaciones escalables. Para la realización de la API emplearé Expressjs, framework de Nodejs que facilita mucho la tarea para las operaciones CRUD (Create Read Update Delete). Pero todo este desarrollo no puede ir solo, necesita de unos test que permitan automatizar si los cambios realizados son correctos. Travis es una herramienta muy popular entre los desarrollados para la integración continua ya que se configura directamente con GitHub resultando mucho más cómodo.  
 
 ## Despliegue
-Despliegue en [https://gacademy.herokuapp.com/](https://gacademy.herokuapp.com/)
 
+Despliegue en [https://gacademy.herokuapp.com/](https://gacademy.herokuapp.com/)
 
 El despliegue de la aplicación se ha realizado en Heroku. El uso de Heroku es debido a que se puede comenzar con una cuenta gratuita y en caso de querer ampliar las prestaciones 
 del servidor se puede contratar según las necesidades de la aplicación(dynos). Además Heroku proporciona un toolbet muy bien adaptado para trabajar con aplicaciones NodeJs
 
+Para configurar Heroku he realizado las configuraciones descritas [aquí](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)
 
 ## Project Documentation
 [Online Docs](https://pavocejudo.github.io/ProyectoIV/)
