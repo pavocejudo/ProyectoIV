@@ -15,7 +15,7 @@ En el desarrollo de gAcademy emplearé Nodejs como lenguaje principal para el se
 
 Despliegue en [https://gacademy.herokuapp.com/](https://gacademy.herokuapp.com/)
 
-El despliegue de la aplicación se ha realizado en Heroku. El uso de Heroku es debido a que se puede comenzar con una cuenta gratuita y en caso de querer ampliar las prestaciones 
+El despliegue de la aplicación se ha realizado en Heroku. El uso de Heroku es debido a que se puede comenzar con una cuenta gratuita y en caso de querer ampliar las prestaciones
 del servidor se puede contratar según las necesidades de la aplicación(dynos). Además Heroku proporciona un toolbet muy bien adaptado para trabajar con aplicaciones NodeJs.
 
 Para configurar Heroku he realizado las configuraciones descritas [aquí](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up).
@@ -31,6 +31,7 @@ Los pasos seguidos sigue el siguiente orden:
 
 	3.3 Si todo funciona correctamente, podemos subirlo a Git ```git push heroku master```
 4. Podemos acceder a [https://gacademy.herokuapp.com/](https://gacademy.herokuapp.com/) para comprobar que todo funcione correcto.
+5. Para realizar el despliegue automático entramos al panel de configuración de la aplicación en Heroku. En la pestaña _Deploy_ conectamos la aplicación a GitHub (si no está conectada), seleccionamos la rama de donde queremos desplegar la aplicación, se marca la casilla de _"Wait for CI to pass before deploy"_ para indicar que queremos hacer el despliegue si los test se cumplen. En la siguiente imagen vemos como queda configurado: ![Despliegue automático en Heroku](despliegue.png)
 
 ## Project Documentation
 [Online Docs](https://pavocejudo.github.io/ProyectoIV/)
