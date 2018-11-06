@@ -45,11 +45,11 @@ Los pasos seguidos siguen el siguiente orden:
 [https://gacademy.herokuapp.com/student/all](https://gacademy.herokuapp.com/student/all)
 
 El resultado es:
-    ![resultado](studentall.png)
 
-    https://gacademy.herokuapp.com/student/all
-
+![resultado](studentall.png)
 
 [https://gacademy.herokuapp.com/subject/IV](https://gacademy.herokuapp.com/subject/IV)
+
 El resultado es:
+
 ![resultado](subjectiv.png)
