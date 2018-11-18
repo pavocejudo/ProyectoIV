@@ -25,6 +25,11 @@ app.get('/', (req, res) => {
    res.send(JSON.stringify({'status':'ok'}));
 })
 
+app.get('/status', (req, res) => {
+   res.setHeader('Content-Type', 'application/json');
+   res.send(JSON.stringify({'status':'ok'}));
+})
+
 app.get('/student/all', (req,res) => {
     res.setHeader('Content-Type','application/json');
     res.send(JSON.stringify(myclass));
