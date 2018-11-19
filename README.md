@@ -4,12 +4,16 @@
 *gAcademy* es un proyecto en el marco de la asignatura [Infraestructuras Virtuales](https://github.com/JJ/IV-18-19) de la UGR. *gAcademy* nace para ser una herramienta basada en microservicios para ser utilizada en proyectos de **gestión de alumnos y profesores** en el ámbito académico.  
 La idea principal es cambiar (y facilitar) la gestión de una academia donde hasta dar de alta un alumno puede ser una tarea tediosa. Los microservicios que incluirá este proyecto serán, entre otros, la creación de nuevos alumnos y profesores, asignación de grupos tanto a alumnos como a profesores y la gestión de horarios de aulas y grupos.
 
+---
+
 ## Servicios
 | Lenguaje | Base de datos | Infraestructura | IC |
 | -------- | ------------- | --------------- | -- |
 | [Nodejs](https://nodejs.org/en/)  [Express.js](https://expressjs.com/)|[Mongodb](https://www.mongodb.com/es) | [Heroku](https://www.heroku.com/) | [Travis](https://travis-ci.org/) |
 
 En el desarrollo de gAcademy emplearé Nodejs como lenguaje principal para el servidor ya que permite llamadas asíncronas y parte de la idea de hacer aplicaciones escalables. Para la realización de la API emplearé Expressjs, framework de Nodejs que facilita mucho la tarea para las operaciones CRUD (Create Read Update Delete). Pero todo este desarrollo no puede ir solo, necesita de unos test que permitan automatizar si los cambios realizados son correctos. Travis es una herramienta muy popular entre los desarrollados para la integración continua ya que se configura directamente con GitHub resultando mucho más cómodo.  
+
+---
 
 ## Despliegue
 
@@ -31,10 +35,21 @@ Los pasos seguidos sigue el siguiente orden:
 
 	3.3 Si todo funciona correctamente, podemos subirlo a Git ```git push heroku master```
 4. Podemos acceder a [https://gacademy.herokuapp.com/](https://gacademy.herokuapp.com/) para comprobar que todo funcione correcto.
-5. Para realizar el despliegue automático entramos al panel de configuración de la aplicación en Heroku. En la pestaña _Deploy_ conectamos la aplicación a GitHub (si no está conectada), seleccionamos la rama de donde queremos desplegar la aplicación, se marca la casilla de _"Wait for CI to pass before deploy"_ para indicar que queremos hacer el despliegue si los test se cumplen. En la siguiente imagen vemos como queda configurado: ![Despliegue automático en Heroku](despliegue.png)
+5. Para realizar el despliegue automático entramos al panel de configuración de la aplicación en Heroku. En la pestaña _Deploy_ conectamos la aplicación a GitHub (si no está conectada), seleccionamos la rama de donde queremos desplegar la aplicación, se marca la casilla de _"Wait for CI to pass before deploy"_ para indicar que queremos hacer el despliegue si los test se cumplen. En la siguiente imagen vemos como queda configurado: ![Despliegue automático en Heroku](docs/despliegue.png)
 6. Una vez que la aplicación está alojada en Heroku, para ejecutarla necesitamos de un fichero llamado [_Procfile_](https://github.com/pavocejudo/ProyectoIV/blob/master/Procfile) que le va a indicar a nuestro dynos en Heroku que comando debe ejecutar para lanzar nuestra aplicación web, en mi caso, al ser una aplicación nodejs, el comando es ```node src/app.js```.
 
-## Project Documentation
+---
+
+## Despliegue mediante contenedor
+
+Documentación de [Docker y DockerHub](https://pavocejudo.github.io/ProyectoIV/)
+
+
+Contenedor: [https://hub.docker.com/r/pavocejudo/proyectoiv/](https://hub.docker.com/r/pavocejudo/proyectoiv/)
+
+Despliegue en Heroku mediante Docker: [https://docker-gacademy.herokuapp.com/status](https://docker-gacademy.herokuapp.com/status)
+
+## Documentación del proyecto
 [Online Docs](https://pavocejudo.github.io/ProyectoIV/)
 
 

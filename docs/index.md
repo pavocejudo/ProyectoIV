@@ -53,3 +53,27 @@ El resultado es:
 El resultado es:
 
 ![resultado](subjectiv.png)
+
+
+
+## Despliegue mediante contenedor
+
+Para poder desplegar nuestra aplicación mediante un contenedor, vamos a necesitar tener instalado [Docker](https://www.docker.com/).
+
+Una vez instalado, creamos nuestro archivo Dockerfile. Este archivo nos permitirá especificar al contenedor qué tendrá, además de definir variables de entorno, configurar puertos para nuestra aplicación y establecer las rutas para ejecutar el proyecto.
+
+Para generar el contenedor utilizamos:
+
+```
+docker build -t pavocejudo/gacademy-node .
+```
+
+Una vez que esté creado, podemos subirlo a [DockerHub](https://hub.docker.com/r/pavocejudo/proyectoiv) mediante los comandos (una vez nos hemos registrado en docker mediante ```docker login```):
+
+```
+ docker tag gAcademy pavocejudo/gacademy-node:latest
+
+ docker push pavocejudo/gacademy-node:latest
+```
+
+Por otro lado, he configurado otro contenedor para que se actualice automáticamente conforme se hacen push en el proyecto de GitHub
