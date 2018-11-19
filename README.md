@@ -47,7 +47,7 @@ Documentación de [Docker y DockerHub](https://pavocejudo.github.io/ProyectoIV/)
 
 Contenedor:[https://docker-gacademy.herokuapp.com/status](https://docker-gacademy.herokuapp.com/status)
 
-Enlace a DockerHub: [https://hub.docker.com/r/pavocejudo/proyectoiv/](https://hub.docker.com/r/pavocejudo/proyectoiv/)
+Enlace a [DockerHub](https://hub.docker.com/r/pavocejudo/proyectoiv/)
 
 ## Documentación del proyecto
 [Online Docs](https://pavocejudo.github.io/ProyectoIV/)
