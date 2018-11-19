@@ -76,4 +76,4 @@ Una vez que esté creado, podemos subirlo a [DockerHub](https://hub.docker.com/r
  docker push pavocejudo/gacademy-node:latest
 ```
 
-Por otro lado, he configurado otro contenedor para que se actualice automáticamente conforme se hacen push en el proyecto de GitHub
+Por otro lado, he configurado otro contenedor para que se actualice automáticamente conforme se hacen push en el proyecto de GitHub. Para ello, en nuestra cuenta de DockerHub, entramos en ```Create > Create Automatic Build``` y seleccionamos nuestro repositorio de Github.
