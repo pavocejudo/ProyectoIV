@@ -45,9 +45,7 @@ Los pasos seguidos sigue el siguiente orden:
 Documentación de [Docker y DockerHub](https://pavocejudo.github.io/ProyectoIV/)
 
 
-Contenedor: [https://hub.docker.com/r/pavocejudo/proyectoiv/](https://hub.docker.com/r/pavocejudo/proyectoiv/)
-
-Despliegue en Heroku mediante Docker: [https://docker-gacademy.herokuapp.com/status](https://docker-gacademy.herokuapp.com/status)
+Contenedor:[https://docker-gacademy.herokuapp.com/status](https://docker-gacademy.herokuapp.com/status) 
 
 ## Documentación del proyecto
 [Online Docs](https://pavocejudo.github.io/ProyectoIV/)
