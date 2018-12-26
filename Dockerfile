@@ -5,10 +5,10 @@ WORKDIR /application
 
 #Instalando dependencias
 COPY package.json /application/
+COPY src/ /application/
 
 RUN npm install
 
-COPY . /application/
 
 EXPOSE 8080
 CMD [ "node","src/app.js" ]
