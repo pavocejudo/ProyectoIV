@@ -20,6 +20,18 @@ function Student(name, age, subjects){
          return this.subjects;
      };
 
+     this.setName = function(name){
+         this.name = name;
+     };
+
+     this.setAge = function(age){
+         this.age = age;
+     };
+
+     this.setSubjects = function(subjects){
+         this.subjects = subjects;
+     };
+
      this.toJson = function(){
          return JSON.stringify(
              {'status':'ok',
