@@ -34,6 +34,17 @@ app.get('/teacher/all', (req,res) => {
 
 
 app.get('/subject/:name',(req, res) =>{
+
+    if(!myclass.hasOwnProperty(req.param.name)){
+        for( s in students ){
+            asignatura = students[s].getSubject();
+            console.log(asignatura);
+            for ( a in asignatura ){
+                if( myclass.hasOwnProperty(asignatura[a]) ) // Si existe la key, añadimos el alumno
+                    myclass[asignatura[a]].push(students[s]);
+            }
+        }
+    }
     subject_searched = myclass[req.params.name];
     res.setHeader('Content-Type','application/json');
     res.send(JSON.stringify(subject_searched));
@@ -64,7 +75,7 @@ app.post('/student/', (req, res)=>{
 
 app.post('/teacher/', (req, res)=>{
     var name = req.body.nombre;
-    var subjects = req.body.asignatura;
+    var subject = req.body.asignatura;
 
     teacher_post = new Teacher(name, subject);
 
@@ -99,6 +110,21 @@ app.patch('/student/:id', (req, res)=>{
         res.send(JSON.stringify({'status':'ok'}))
     else
         res.send(JSON.stringify({'status':'error'}))
+})
+
+app.delete('/class/:student/:subject', (req, res)=>{
+
+    var alumno      = req.params.student;
+    var asignatura  = req.params.subject;
+
+    if ( myclass.hasOwnProperty(asignatura) ){
+        myclass.splice( myclass.indexOf(alumno), 1);
+
+        res.send(JSON.stringify({'status':'ok'}))
+    }else {
+        res.send(JSON.stringify({'status':'error'}))
+    }
+
 })
 
 // PORT :: port defined by the environment, otherwise 80
