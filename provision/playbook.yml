@@ -1,0 +1,34 @@
+---
+- hosts: all 
+
+  tasks:
+
+   - name: Update all packages
+     become: yes
+     apt:
+         upgrade: dist
+         update_cache: yes
+
+   - name: Install node
+     become: yes
+     apt:
+         name: apt
+         state: present
+
+   - name: Install npm
+     become: yes
+     apt:
+         name: npm
+         state: present
+
+   - name: Clone repository
+     git: 
+         repo: https://github.com/pavocejudo/ProyectoIV.git
+         dest: ~/proyecto/
+
+   - name: Install repository dependencies
+     npm:
+        path: ~/proyecto/
+  
+   - name: Set PORT environment variable
+     shell: echo 'export PORT="80"' >> ~/.profile
