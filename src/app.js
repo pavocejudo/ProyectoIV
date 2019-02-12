@@ -128,5 +128,5 @@ app.delete('/class/:student/:subject', (req, res)=>{
 })
 
 // PORT :: port defined by the environment, otherwise 80
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 80;
 app.listen(port, ()=> console.log(`Listening on port ${port}...`));
