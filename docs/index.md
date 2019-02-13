@@ -182,3 +182,12 @@ fly exec:despliegue -f despliegue/flightplan.js
 Para comprobar si nuestra aplicación se ha desplegado correctamente, entramos en su IP: [174.138.2.199](174.138.2.199)  y comprobamos que está en ejecución el servidor:
 
 ![Servidor en ejecución](ejecutando_server.png)
+
+Enlaces interesantes utilizados en el desarrollo del provisionamiento y despliegue:
+- [Opciones disponibles para la configuración de Vagrantfile](https://www.vagrantup.com/docs/vagrantfile/machine_settings.html)
+- [Configuración de Digital Ocean en Vagrant con todos los parámetros que podemos incluir ](https://github.com/devopsgroup-io/vagrant-digitalocean/)
+- [Tutorial proporcionado por Digital Ocean para realizar el provisionamiento con Vagrant](https://www.digitalocean.com/community/tutorials/how-to-use-digitalocean-as-your-provider-in-vagrant-on-an-ubuntu-12-10-vps)
+- [Explicación de Playboks](https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html)
+- [Uso de npm en Playbooks](https://docs.ansible.com/ansible/latest/modules/npm_module.html)
+- [Parámetros para ejecutar en modo root o no en Playbook](https://docs.ansible.com/ansible/latest/user_guide/become.html#directives)
+- [Documentación oficial de FlightPlan](https://github.com/pstadler/flightplan)
