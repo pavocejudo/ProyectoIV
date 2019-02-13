@@ -7,9 +7,9 @@ La idea principal es cambiar (y facilitar) la gestión de una academia donde has
 ---
 
 ## Servicios
-| Lenguaje | Base de datos | Infraestructura | IC | IaaS |
-| -------- | ------------- | --------------- | -- | ---- |
-| [Nodejs](https://nodejs.org/en/)  [Express.js](https://expressjs.com/)|[Mongodb](https://www.mongodb.com/es) | [Heroku](https://www.heroku.com/) | [Travis](https://travis-ci.org/) | [Digital Ocean](https://digitalocean.com) |
+| Lenguaje | Infraestructura | IC | IaaS |
+| -------- | --------------- | -- | ---- |
+| [Nodejs](https://nodejs.org/en/)  [Express.js](https://expressjs.com/)| [Heroku](https://www.heroku.com/) | [Travis](https://travis-ci.org/) | [Digital Ocean](https://digitalocean.com) |
 
 En el desarrollo de gAcademy emplearé Nodejs como lenguaje principal para el servidor ya que permite llamadas asíncronas y parte de la idea de hacer aplicaciones escalables. Para la realización de la API emplearé Expressjs, framework de Nodejs que facilita mucho la tarea para las operaciones CRUD (Create Read Update Delete). Pero todo este desarrollo no puede ir solo, necesita de unos test que permitan automatizar si los cambios realizados son correctos. Travis es una herramienta muy popular entre los desarrollados para la integración continua ya que se configura directamente con GitHub resultando mucho más cómodo.  
 
