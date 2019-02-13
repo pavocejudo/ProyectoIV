@@ -1,13 +1,13 @@
 var plan = require('flightplan');
 
-var appName = "gAcademy";
-
 plan.target('despliegue', [
- {
-	host: '174.138.2.199',
-	username: 'root',
-	agent: process.env.SSH_AUTH_SOCK
-}]);
+ 	{
+		host: '174.138.2.199',
+		username: 'root',
+		agent: process.env.SSH_AUTH_SOCK
+	}
+	]
+);
 
 plan.remote(['install'],function(remote){
 	remote.log('Installing dependecies');
@@ -23,3 +23,10 @@ plan.remote(['exec'], function(remote){
 		remote.exec('node src/app.js');
 	});
 });
+
+plan.remote(['stop'], function(remote){
+	remote.log('Stopping server...');
+	remote.with('cd ~/proyecto/', function(){
+		remote.exec('pkill -f "node src/app.js"');
+	})
+})
