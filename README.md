@@ -48,7 +48,7 @@ del servidor se puede contratar según las necesidades de la aplicación(dynos).
 
 ## Despliegue mediante contenedor
 
-Documentación de [Docker y DockerHub](https://pavocejudo.github.io/ProyectoIV/)
+Documentación de [Docker y DockerHub](https://srmarin.github.io/ProyectoIV/)
 
 
 Contenedor: [https://docker-gacademy.herokuapp.com](https://docker-gacademy.herokuapp.com)
@@ -58,7 +58,7 @@ Enlace a [DockerHub](https://hub.docker.com/r/pavocejudo/proyectoiv/)
 Despliegue final: 174.138.2.199
 
 ## Documentación del proyecto
-[Online Docs](https://pavocejudo.github.io/ProyectoIV/)
+[Online Docs](https://srmarin.github.io/ProyectoIV/)
 
 
 
